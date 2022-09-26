@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>The Pig game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="player player-0 active">
+        <div class="player-box">
+          <h2 class="player-name name-1">Player 1</h2>
+          <span class="score score-0">0</span>
+        </div>
+        <div class="current_score-box">
+          <p class="current">current</p>
+          <div class="current-score currentScore0">0</div>
+        </div>
+      </div>
+      <div class="player player-1">
+        <div class="player-box">
+          <h2 class="player-name name-2">Player 2</h2>
+          <span class="score score-1">0</span>
+        </div>
+        <div class="current_score-box">
+          <p class="current">current</p>
+          <div class="current-score currentScore1">0</div>
+        </div>
+      </div>
+
+      <button class="new-game">
+        <span class="material-symbols-outlined restart-icon icon">
+          restart_alt
+        </span>
+        new game
+      </button>
+      <div class="img-box">
+        <img src="dice-1.png" alt="dice" class="dice hidden" />
+      </div>
+      <button class="roll">
+        <span class="material-symbols-outlined dice-icon icon"> casino </span
+        >Roll
+      </button>
+      <button class="hold">
+        <span class="material-symbols-outlined hold-icon icon">
+          front_hand </span
+        >hold
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

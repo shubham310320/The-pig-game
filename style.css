@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  /* Created with https://www.css-gradient.com */
+  background: #7749f3;
+  background: -webkit-radial-gradient(bottom right, #7749f3, #1875eb);
+  background: -moz-radial-gradient(bottom right, #7749f3, #1875eb);
+  background: radial-gradient(to top left, #7749f3, #1875eb);
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  max-width: 120rem;
+  margin: 30rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 15rem rgba(51, 51, 51, 0.123);
+  border-left: 0.2px solid rgba(255, 255, 255, 0.424);
+  border-top: 0.2px solid rgba(255, 255, 255, 0.486);
+}
+
+/* COMMON STYLES */
+.player {
+  background-color: #f3f3f33f;
+  width: 100%;
+  padding: 12rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  transition: all 0.3s;
+}
+.player-0 {
+  padding-right: 20rem;
+  padding-left: 10rem;
+}
+.player-1 {
+  padding-left: 20rem;
+  padding-right: 10rem;
+}
+.player-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+.player-name {
+  font-size: 5.2rem;
+}
+.score {
+  font-size: 12.5rem;
+  color: #6632f7;
+  font-weight: 700;
+}
+.current_score-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: orange;
+  padding: 2rem;
+  border-radius: 12px;
+}
+.current {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.current-score {
+  color: #fff;
+  font-weight: 700;
+  font-size: 5.4rem;
+}
+
+/* BUTTONS */
+
+button {
+  position: absolute;
+  border: none;
+  background-color: #1873ebce;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  color: aliceblue;
+  font-weight: 700;
+  cursor: pointer;
+}
+.new-game {
+  top: 2rem;
+  padding: 1rem 5rem;
+  border-radius: 10rem;
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+}
+.hold {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  bottom: 10rem;
+  padding: 1rem 4rem;
+  border-radius: 10rem;
+}
+.roll {
+  top: 55%;
+  border-radius: 12px;
+  padding: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.4rem;
+}
+
+.img-box {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.dice {
+  height: 12rem;
+}
+
+.icon {
+  color: orange;
+  font-size: 6.4rem;
+}
+
+.active {
+  background-color: #f3f3f3b2;
+}
+
+.winner {
+  background-color: #333;
+  color: orange;
+}
+.shutdown {
+  pointer-events: none;
+}
+.hidden {
+  display: none;
+}
