@@ -4,8 +4,6 @@ const btnHold = document.querySelector('.hold');
 
 const player1 = document.querySelector('.player-0');
 const player2 = document.querySelector('.player-1');
-const score1 = document.querySelector('.score-0');
-const score2 = document.querySelector('.score-1');
 const current1 = document.querySelector('.currentScore0');
 const current2 = document.querySelector('.currentScore1');
 const dice = document.querySelector('.dice');
@@ -54,7 +52,7 @@ btnHold.addEventListener('click', function () {
       .classList.remove('active');
     btnHold.classList.add(`shutdown`);
     btnRoll.classList.add(`shutdown`);
-    dice.classList.remove('hidden');
+    dice.classList.add('hidden');
   } else {
     changePlayer();
   }
@@ -65,8 +63,13 @@ btnNewGame.addEventListener('click', function () {
   score = 0;
   scores[0] = 0;
   scores[1] = 0;
-  document.querySelector(`.player`).classList.remove('winner');
   activePlayer = 0;
+  document.querySelector;
+  document.querySelectorAll('.player').forEach(player => {
+    player.classList.remove('winner');
+    player.classList.remove('active');
+  });
+  document.querySelectorAll('.score').forEach(score => (score.textContent = 0));
   document.querySelector(`.player-${activePlayer}`).classList.add('active');
   btnHold.classList.remove(`shutdown`);
   btnRoll.classList.remove(`shutdown`);
